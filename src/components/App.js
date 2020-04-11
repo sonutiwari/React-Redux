@@ -27,6 +27,7 @@ class App extends React.Component {
     const renderData = showFavourites ? favourites : data;
     return (
       <div className="App">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> 
         <Navbar dispatch={this.props.store.dispatch} search={search}/>
         <div className="main">
           <div className="tabs">
